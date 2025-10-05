@@ -5,11 +5,7 @@ import adapterNode from '@sveltejs/adapter-node';
 const config = {
 	kit: {
 		adapter:
-			adapterVercel({
-				runtime: 'nodejs20.x',
-				regions: ['iad1'],
-				split: false
-			}) || adapterNode(),
+			adapterVercel() || adapterNode(),
 		files: {
 			assets: 'static'
 		}
