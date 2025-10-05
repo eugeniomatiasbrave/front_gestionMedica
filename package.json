@@ -34,6 +34,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-node": "^5.2.5",
+		"@sveltejs/adapter-vercel": "^5.10.3",
 		"daisyui": "^4.12.10",
 		"dotenv": "^16.4.5"
 	}
