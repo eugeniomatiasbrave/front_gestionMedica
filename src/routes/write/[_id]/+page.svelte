@@ -19,7 +19,7 @@
 
 		const result = await response.json();
 		if (result.status === 'success') {
-			pdfUrl = `http://localhost:8080${result.url}`;
+			pdfUrl = `${API_URL}${result.url}`;
 			window.open(pdfUrl, '_blank');
 		} else {
 			console.error('Error al crear el PDF:', result.error);

@@ -1,6 +1,8 @@
 <script>
 	export let data;
 	const Writings = data.writings.payload;
+	
+	const API_URL = process.env.VITE_API_URL;
 
 	// Variable reactiva para la búsqueda
 	let searchTerm = '';
@@ -14,7 +16,7 @@
 
 	async function createXLSX() {
 		try {
-			const response = await fetch('http://localhost:8080/api/writings/xlsx', {
+			const response = await fetch(`${API_URL}/writings/xlsx`, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
@@ -24,7 +26,7 @@
 
 			const result = await response.json();
 			if (result.status === 'success') {
-				xlsxUrl = `http://localhost:8080${result.url}`;
+				xlsxUrl = `${API_URL}${result.url}`;
 				window.open(xlsxUrl, '_blank');
 			} else {
 				console.error('Error al crear el Excel:', result.error);
