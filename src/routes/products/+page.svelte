@@ -1,4 +1,5 @@
 <script>
+	import { BASE_URL } from '$lib/config.js'
 	export let data;
 	const Products = data.products.payload;
 	console.log(Products);
@@ -180,7 +181,7 @@
 												<div class="flex-shrink-0 h-16 w-16">
 													<img
 														class="h-16 w-16 rounded-lg object-cover border border-gray-200"
-														src={'http://localhost:8080' + img.path}
+														src={BASE_URL + img.path}
 														alt={p.name}
 													/>
 												</div>

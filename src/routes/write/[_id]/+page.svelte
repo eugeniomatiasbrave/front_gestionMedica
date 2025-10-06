@@ -1,6 +1,7 @@
 <script>
 	export let data;
-	const API_URL = process.env.VITE_API_URL;
+    import { API_URL, BASE_URL } from '$lib/config.js';
+
 	const { writingById } = data;
 	const writing = writingById.data;
 	const id = writingById.data._id;
@@ -19,7 +20,7 @@
 
 		const result = await response.json();
 		if (result.status === 'success') {
-			pdfUrl = `${API_URL}${result.url}`;
+			pdfUrl = `${BASE_URL}${result.url}`;
 			window.open(pdfUrl, '_blank');
 		} else {
 			console.error('Error al crear el PDF:', result.error);

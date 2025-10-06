@@ -1,6 +1,5 @@
 import { redirect } from '@sveltejs/kit';
-
-const API_URL = process.env.VITE_API_URL;
+import { API_URL } from '$lib/config.js';
 
 export const actions = {
     default: async ({ request }) => {

@@ -1,4 +1,5 @@
-const API_URL = process.env.VITE_API_URL;
+
+import { API_URL } from '$lib/config.js'
 
 export const load = async () => {
     console.log('Server Load Ran')

@@ -1,4 +1,5 @@
 <script>
+	import { BASE_URL } from '$lib/config.js';
 	export let data;
 	const { product } = data;
 
@@ -74,7 +75,7 @@
 						<div id="current-image" class="bg-gray-50 border border-gray-200 rounded-lg p-4">
 							{#each product.data.image as img}
 								<img
-									src={'http://localhost:8080' + img.path}
+									src={BASE_URL + img.path}
 									alt={product.data.name}
 									class="h-32 w-32 object-cover rounded-lg border border-gray-300 shadow-sm"
 								/>

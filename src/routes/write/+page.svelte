@@ -1,8 +1,8 @@
 <script>
 	export let data;
+	import { API_URL } from '$lib/config.js';
+
 	const Writings = data.writings.payload;
-	
-	const API_URL = process.env.VITE_API_URL;
 
 	// Variable reactiva para la búsqueda
 	let searchTerm = '';
