@@ -30,7 +30,7 @@ export const actions = {
         const description = formData.get('description');
 		const image = formData.get('image');
 
-		console.log('name:', name, 'price:', price, 'image:', image, 'description:', description); //llega la imagen
+		//console.log('name:', name, 'price:', price, 'image:', image, 'description:', description); //llega la imagen
 
         if (isNaN(price)) {
             return { success: false, error: 'Error, is not a number' };
@@ -46,7 +46,7 @@ export const actions = {
         uploaderFormData.append('description', description);
         uploaderFormData.append('image', image);
 
-		console.log('newProductFormData:', uploaderFormData); 
+		//console.log('newProductFormData:', uploaderFormData); 
 
         const result = await fetch(`${API_URL}/products/${pid}`, {
             method: 'PUT',

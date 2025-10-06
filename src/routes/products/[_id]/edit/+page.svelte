@@ -3,8 +3,8 @@
 	export let data;
 	const { product } = data;
 
-	console.log(product.data.name);
-	console.log(product.data.price);
+	//console.log(product.data.name);
+	//console.log(product.data.price);
 </script>
 
 <div class="bg-gray-50 min-h-screen">

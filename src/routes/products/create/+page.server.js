@@ -27,7 +27,7 @@ export const actions = {
         newProductFormData.append('image', image);
         newProductFormData.append('description', description);
 
-		console.log('newProductFormData:', newProductFormData); 
+		//console.log('newProductFormData:', newProductFormData); 
 
         const result = await fetch(`${API_URL}/products`, {
             method: 'POST',

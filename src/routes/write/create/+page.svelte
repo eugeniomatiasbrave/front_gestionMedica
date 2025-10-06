@@ -1,6 +1,6 @@
 <script>
 	export let form;
-	console.log(form);
+	//console.log(form);
 </script>
 
 <div class="bg-gray-50 min-h-screen">

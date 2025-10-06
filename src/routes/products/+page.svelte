@@ -2,7 +2,7 @@
 	import { BASE_URL } from '$lib/config.js'
 	export let data;
 	const Products = data.products.payload;
-	console.log(Products);
+	//console.log(Products);
 
 	// Variable reactiva para la búsqueda
 	let searchTerm = '';

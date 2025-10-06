@@ -2,8 +2,8 @@
 	export let data;
 	const { writing } = data;
 
-	console.log(writing.title);
-	console.log(writing.text);
+	//console.log(writing.title);
+	//console.log(writing.text);
 </script>
 
 <div class="bg-gray-50 min-h-screen">

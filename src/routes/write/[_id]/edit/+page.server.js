@@ -33,9 +33,8 @@ export const actions = {
             return { success: false, error: 'Error Data ' };
         }
 
-        const body = { title, text };
-
-        console.log('body:', body);
+        //const body = { title, text };
+        //console.log('body:', body);
 
 
         const result = await fetch(`${API_URL}/writings/${wid}`, {
